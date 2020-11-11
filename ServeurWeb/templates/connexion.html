@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BCF - Connexion</title>
+</head>
+<body>
+   <form action="/client" method="post">
+        <input name="email">
+        <input name="password">
+        <input type="submit" value="Submit">
+    </form>
+    <p>Vous n'avez pas encore de compte ? <a href="{{ url_for('inscription') }}">s'inscrire</a></p>
+
+</body>
+</html>
