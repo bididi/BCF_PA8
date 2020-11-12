@@ -5,7 +5,14 @@
     <title>BCF - Inscription</title>
 </head>
 <body>
-<p >S'inscrire</p>
+    <h1>S'inscrire</h1>
+    <form action="/client" method="post">
+        <input name="email">
+        <input name="password">
+        <input name="confirm password">
+        <input type="submit" value="Register">
+    </form>
+    <p>Vous avez déjà un compte ? <a href="{{ url_for('connexion') }}">Se connecter</a></p>
 
 </body>
 </html>
