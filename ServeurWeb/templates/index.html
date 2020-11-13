@@ -5,10 +5,35 @@
     <title>BCF - Breast Cancer Finder</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
+<header>
+    <h1>
+      B.C.F.
+    </h1>
+  <nav am-layout="horizontal">
+      <a href="{{ url_for('connexion') }}">Connexion</a>
+      <a href="{{ url_for('inscription') }}">S'inscrire</a>
+  </nav>
+</header>
 <body>
-    <h1>BCF - Breast Cancer Finder</h1>
-    <p>test test {{a}}</p>
-    <p><a href="{{ url_for('connexion') }}">Connexion</a></p>
-    <p><a href="{{ url_for('inscription') }}">S'inscrire</a></p>
+
 </body>
+<footer>
+    <div class="foot">
+        <p>dfskjfskdjfhksdjfh</p>
+         <! -- Liens vers page qui sommes-nous  -->
+    </div>
+    <div class="foot">
+        <p>Copyright</p>
+        <p>Contactez nous au : 0616344513 </p>
+    </div>
+    <div class="foot">
+            <p><a href="https://www.facebook.com/BreastCancerFinder/?notif_id=1605289323338281&notif_t=page_fan&ref=notif" target="_blank" rel="nofollow">Facebook</a></p
+           <p> <a href="https://www.facebook.com/BreastCancerFinder/?notif_id=1605289323338281&notif_t=page_fan&ref=notif" target="_blank" rel="nofollow">Instagram</a></p>
+        <! -- Liens vers nos réseaux sociaux  -->
+    </div>
+
+</footer>
+
 </html>
+
+

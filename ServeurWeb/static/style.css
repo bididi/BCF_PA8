@@ -1,4 +1,40 @@
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+html{
+  height: 100%;
+  width : 100%;
+}
 body{
-    background-color: red;
+  background-image: linear-gradient(to left bottom, #eec1e5, #e8c4ec, #e2c7f2, #dbcaf7, #d3cdfb, #c8d0fe, #bed4ff, #b4d7ff, #a4dcff, #93e0ff, #80e5ff, #6fe9ff);
+}
+/* Create three equal columns that floats next to each other */
+.foot {
+  float: left;
+  width: 33.33%;
+  flex-direction: column;
 }
 
+/* Clear floats after the columns */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .foot{
+    width: 100%;
+  }
+}
+a:visited{
+  color: aliceblue;
+}
