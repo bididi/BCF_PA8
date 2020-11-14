@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>BCF - Breast Cancer Finder</title>
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <header>
-    <h1>
-      B.C.F.
-    </h1>
-  <nav am-layout="horizontal">
-      <a href="{{ url_for('connexion') }}">Connexion</a>
-      <a href="{{ url_for('inscription') }}">S'inscrire</a>
+    <div class="logo_titre">
+        <img class="logo" src="/static/images/logo.png">
+        <h1>B.C.F.</h1>
+    </div>
+
+  <nav class="grp_connexion" am-layout="horizontal">
+
+      <a class="boutton" href="{{ url_for('connexion') }}">Connexion</a>
+      <a class="boutton" href="{{ url_for('inscription') }}">S'inscrire</a>
+
   </nav>
 </header>
-<body>
 
+
+<body>
+    <div class="presentation">
+        <img id="fleche_back" class="next" src="/static/images/fleche.png">
+        <h3>Présentation du projet</h3>
+        <p>
+            L’idée du projet est de profiter des avancées dans le domaine du machine learning et particulièrement du transfert learning et deep learning afin de produire un modèle d’analyse de mammographies du cancer du sein. L’innovation réside dans le côté prédictif du modèle ainsi que dans la capacité à restituer la tumeur dans un environnement en 2D. Les performances permettraient de détecter un cancer et des prédispositions au développement de la pathologie chez les sujets analysés, tout en étant plus rapide que les radiologues. En bref, donner la possibilité aux organismes publics de gagner en efficacité.
+            </br></br>A partir de 50 ans, les françaises sont invitées à passer un dépistage du cancer du sein, sous forme de mammographie. Cela crée un volume de données conséquent, et les radiologues doivent vérifier une à une chaque mammographie. Notre logiciel permettrait donc de se placer en amont du radiologue et de traiter un grand nombre de mammographies. Ainsi, le radiologue n’aurait plus qu’à vérifier les mammographies suspectes pointées par notre logiciel. Cela représenterait un gros gain de temps pour le personnel médical.
+        </p>
+        <img class="next" src="/static/images/fleche.png" onclick="">
+    </div>
 </body>
+
+
+
 <footer>
     <div class="foot">
         <p>dfskjfskdjfhksdjfh</p>
          <! -- Liens vers page qui sommes-nous  -->
     </div>
     <div class="foot">
-        <p>Copyright</p>
+        <p><i>Copyright © BCF - 2020</i></p>
         <p>Contactez nous au : 0616344513 </p>
     </div>
     <div class="foot">

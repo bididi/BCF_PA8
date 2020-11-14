@@ -1,4 +1,101 @@
 
+
+html{
+  height: 100%;
+  width : 100%;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-family: 'Dancing Script', cursive;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to left bottom, #eec1e5, #e8c4ec, #e2c7f2, #dbcaf7, #d3cdfb, #c8d0fe, #bed4ff, #b4d7ff, #a4dcff, #93e0ff, #80e5ff, #6fe9ff);
+
+}
+/* -------------------------------------- HEADER -------------------------------------------------------------------*/
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #77A3D7;
+  color: white;
+  text-align: center;
+  box-shadow: 5px 5px 5px #77A3D7;
+}
+
+
+.logo{
+  position: fixed;
+  left: 0.5em;
+  top: 0.5em;
+  border-radius: 10px;
+  height: auto;
+  width: 8em;
+}
+
+
+.grp_connexion{
+  background-color: black;
+  width: 20em;
+
+}
+
+.boutton{
+  padding: 1.5em;
+  background-color: #77A3D7;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  transition: .5s ease;
+}
+
+.boutton:hover{
+  color: black;
+  background-color: #3F70A0;
+}
+
+
+/*---------------------------------------------------- BODY ---------------------------------------------------- */
+
+.presentation{
+  position: center;
+  text-align: justify;
+  width: 60em;
+  height:auto;
+  margin: 30em;
+  background-color: #FFFFFF;
+  padding: 5em;
+  border-radius: 3em;
+}
+
+
+.next{
+  height: auto;
+  width: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 50%;
+}
+.next:hover{
+  height: auto;
+  width: 2em;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s ease;
+}
+#fleche_back{
+  transform: scaleX(-1);
+}
+
+
+
+/* ----------------------------------------------------------- FOOTER -----------------------------------------------*/
+
 footer {
   position: fixed;
   left: 0;
@@ -7,13 +104,6 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-}
-html{
-  height: 100%;
-  width : 100%;
-}
-body{
-  background-image: linear-gradient(to left bottom, #eec1e5, #e8c4ec, #e2c7f2, #dbcaf7, #d3cdfb, #c8d0fe, #bed4ff, #b4d7ff, #a4dcff, #93e0ff, #80e5ff, #6fe9ff);
 }
 /* Create three equal columns that floats next to each other */
 .foot {
@@ -35,6 +125,10 @@ footer:after {
     width: 100%;
   }
 }
+a{
+  text-decoration: none;
+}
+
 a:visited{
   color: aliceblue;
 }
