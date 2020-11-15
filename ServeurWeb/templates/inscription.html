@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>BCF - Inscription</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
 </head>
+<header>
+    <div class="header-bar">
+        <a href="{{ url_for('index') }}"><img class="logo" src="/static/images/BCF_transparent.png" ></a>
+    </div>
+</header>
 <body>
     <h1>S'inscrire</h1>
     <form action="/client" method="post">
