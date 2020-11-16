@@ -13,12 +13,13 @@
     </div>
 </header>
 <body>
-   <form action="/client" method="post">
-        <input name="email">
-        <input name="password">
-        <input type="submit" value="Submit">
-    </form>
-    <p>Vous n'avez pas encore de compte ? <a href="{{ url_for('inscription') }}">s'inscrire</a></p>
-
+    <div class="connexion">
+        <form action="/client" method="post">
+            <input name="email">
+            <input name="password">
+            <input type="submit" value="Submit">
+        </form>
+        <p>Vous n'avez pas encore de compte ? <a href="{{ url_for('inscription') }}">s'inscrire</a></p>
+    </div>
 </body>
 </html>

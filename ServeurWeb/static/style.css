@@ -3,6 +3,7 @@
 html{
   height: 100%;
   width : 100%;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 h1{
@@ -11,6 +12,7 @@ h1{
 
 
 body{
+  margin: 0;
   background-size: cover;
   background-color: #DAF3FF;
   min-height: 100vh;
@@ -79,6 +81,8 @@ header {
   background-color: #FFFFFF;
   padding: 5em;
   border-radius: 3em;
+  box-shadow: 1px 1px 1px darkgrey;
+  border: 0.5px solid darkgray;
 }
 
 
