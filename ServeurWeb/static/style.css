@@ -121,7 +121,8 @@ header {
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-radius: 3em;
-
+  box-shadow: 1px 1px 1px darkgrey;
+  border: 0.5px solid darkgray;
 }
 
 #s1 {
