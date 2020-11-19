@@ -67,9 +67,52 @@ header {
 }
 
 
-/*---------------------------------------------------- BODY ---------------------------------------------------- */
+/* ----------------------------------------------------------- FOOTER -----------------------------------------------*/
 
-.presentation{
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/* Create three equal columns that floats next to each other */
+.foot {
+  float: left;
+  width: 33.33%;
+  flex-direction: column;
+}
+
+/* Clear floats after the columns */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .foot{
+    width: 100%;
+  }
+}
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: aliceblue;
+}
+
+
+
+
+
+/*----------------------------------------------------INDEX BODY ---------------------------------------------------- */
+
+/*presentation{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -106,7 +149,7 @@ header {
   transform: scaleX(-1);
 }
 
-
+*/
 
 
 
@@ -254,41 +297,28 @@ header {
   height: 470px;
 }
 
-/* ----------------------------------------------------------- FOOTER -----------------------------------------------*/
+/*------------------------------------------------ CONNEXION BODY ------------------------------------------------------*/
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-/* Create three equal columns that floats next to each other */
-.foot {
-  float: left;
-  width: 33.33%;
-  flex-direction: column;
+.connexion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35em;
+  height:auto;
+  background-color: #FFFFFF;
+  padding: 5em;
+  border-radius: 3em;
+  box-shadow: 1px 1px 1px darkgrey;
+  border: 0.5px solid darkgray;
 }
 
-/* Clear floats after the columns */
-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .foot{
-    width: 100%;
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
-}
-a{
-  text-decoration: none;
-}
-
-a:visited{
-  color: aliceblue;
+.input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
