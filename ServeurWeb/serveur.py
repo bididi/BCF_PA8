@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from connect import connect  # import de la fonction connection
+#from connect import connect  # import de la fonction connection
 
 app = Flask(__name__)
 
