@@ -1,3 +1,4 @@
+
 html{
   height: 100%;
   width : 100%;
@@ -12,7 +13,7 @@ h1{
 body{
   margin: 0;
   background-size: cover;
-  background-color: #DAF3FF;
+  background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,7 +23,7 @@ body{
 
 
 header {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -295,24 +296,27 @@ a:visited{
 
 .connexion{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  width: 35em;
-  height:auto;
-  background-color: #FFFFFF;
+   width: auto;
+  height: auto;
+  background-image: linear-gradient(to right top, #fcc5e6, #fbb6e6, #f7a7e8, #f298eb, #e98af0, #d393f9, #bc9bfe, #a6a2ff, #91b6ff, #8ac7ff, #94d5fc, #aae1f5);
   padding: 5em;
   border-radius: 3em;
-  box-shadow: 1px 1px 1px darkgrey;
+  box-shadow: 1px 5px 10px 1px #333;
   border: 0.5px solid darkgray;
 }
 
 .form{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   }
+form{
+  flex-direction: column;
+  justify-content: space-around;
+}
 .input{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
