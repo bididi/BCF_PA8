@@ -6,8 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    a = 3 + 4
-    html = render_template('index.html', a=a)
+    html = render_template('index.html')
     return html
 
 
@@ -34,10 +33,5 @@ def inscription():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('page_not_found.html'), 404
-
-
-
-
-
 
 app.run()(host='localhost', debug=True)
