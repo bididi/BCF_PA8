@@ -13,14 +13,26 @@
     </div>
 </header>
 <body>
-    <h1>S'inscrire</h1>
-    <form action="/client" method="post">
-        <input name="email">
-        <input name="password">
-        <input name="confirm password">
-        <input type="submit" value="Register">
-    </form>
-    <p>Vous avez déjà un compte ? <a href="{{ url_for('connexion') }}">Se connecter</a></p>
+    <div class="connexion">
+        <h1>S'inscrire</h1>
+        <div class="form">
+            <form class="ins" action="/client" method="post">
+
+                <label for="mail">Enter your password : </label>
+                <input class ="inp" name="email">
+
+                <label for="password">Enter your password : </label>
+                <input class ="inp" name="password">
+
+                <label for="password">Confirm your password : </label>
+                <input class ="inp" name="confirm password">
+
+                <input class='espace' type="submit" value="Register">
+
+            </form>
+            <p>Vous avez déjà un compte ? <a class="identification" href="{{ url_for('connexion') }}">Se connecter</a></p>
+        </div>
+    </div>
 
 </body>
 </html>

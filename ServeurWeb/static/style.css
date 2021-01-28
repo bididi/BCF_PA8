@@ -312,11 +312,39 @@ a:visited{
   flex-direction: column;
   align-items: center;
   }
-form{
+/*form{
   flex-direction: column;
   justify-content: space-around;
-}
+*/
 .input{
   display: flex;
   align-items: center;
+}
+
+/*--------------------------------- Inscription ---------------------------------*/
+
+
+.identification{
+  color: black;
+}
+.ins{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ins >label{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.espace {
+  margin-top: 25px;
+}
+.inp{
+padding: 10px 15px;
+border: none;
+border-radius: 8px;
+}
+
+.inp :active{
+  border: none;
 }
