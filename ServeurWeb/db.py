@@ -1,5 +1,6 @@
-import sqlite3
+#fichier python qui appelle le fichier schema.sql pour initialiser la db
 
+import sqlite3
 import click
 from flask import current_app, g
 from flask.cli import with_appcontext
@@ -22,7 +23,7 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
-
+#appelle schema.sql et execute le code à l'intérieur (création de table pour le moment)
 def init_db():
     db = get_db()
 
@@ -37,7 +38,7 @@ def init_db_command():
     init_db()
     click.echo('Initialized the database.')
 
-
+#initialise la db
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)

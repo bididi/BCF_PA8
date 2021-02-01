@@ -1,5 +1,6 @@
+#fichier "obsolète", le code marche quand on exécute _init_.py
+
 from flask import Flask, render_template, request, redirect, url_for
-#from connect import connect  # import de la fonction connection
 
 app = Flask(__name__)
 
